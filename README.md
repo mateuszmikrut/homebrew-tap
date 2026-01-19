@@ -2,12 +2,6 @@
 
 This is a Homebrew tap containing custom formulas.
 
-## How to use this tap
-
-```bash
-brew tap mateuszmikrut/tap
-```
-
 ## Available Formulas
 
 ### semtag

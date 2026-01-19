@@ -1,6 +1,6 @@
-# Homebrew Tap for Mateusz Mikrut
+# Homebrew Tap
 
-This is a Homebrew tap containing custom formulae.
+This is a Homebrew tap containing custom formulas.
 
 ## How to use this tap
 
@@ -8,22 +8,13 @@ This is a Homebrew tap containing custom formulae.
 brew tap mateuszmikrut/tap
 ```
 
-## Available Formulae
+## Available Formulas
 
 ### semtag
 
-A tool for managing semantic version tags in git repositories.
+For more information, visit the [semtag repository](https://github.com/mateuszmikrut/semtag).
 
 **Installation:**
 ```bash
 brew install mateuszmikrut/tap/semtag
 ```
-
-**Usage:**
-```bash
-semtag -m  # Increment minor version
-semtag -M  # Increment major version
-semtag -p  # Increment patch version
-```
-
-For more information, visit the [semtag repository](https://github.com/mateuszmikrut/semtag).

@@ -3,8 +3,8 @@ class Semtag < Formula
 
   desc "Tool for managing semantic version tags in git repositories"
   homepage "https://github.com/mateuszmikrut/semtag"
-  url "https://github.com/mateuszmikrut/semtag/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  url "https://github.com/mateuszmikrut/semtag/releases/download/0.2.1/semtag-0.2.1.tar.gz"
+  sha256 "fac4df3265db2e01fe53107307a9618a360464efb9aa06a15fdf7927f6c18f1d"
   license "MIT"
 
   depends_on "python@3.12"

@@ -3,25 +3,25 @@ class Semtag < Formula
 
   desc "Tool for managing semantic version tags in git repositories"
   homepage "https://github.com/mateuszmikrut/semtag"
-  url "https://github.com/mateuszmikrut/semtag/releases/download/0.2.1/semtag-0.2.1.tar.gz"
-  sha256 "fac4df3265db2e01fe53107307a9618a360464efb9aa06a15fdf7927f6c18f1d"
+  url "https://github.com/mateuszmikrut/semtag/archive/refs/tags/0.2.6.tar.gz"
+  sha256 "7c108b8eac59aab431f82bda82c7f5955060d9376091372d6a26301291a8de54"
+  version "0.2.6"
   license "MIT"
 
   depends_on "python@3.12"
 
-  resource "gitpython" do
-    url "https://files.pythonhosted.org/packages/source/g/gitpython/GitPython-3.1.43.tar.gz"
-    sha256 "35f314a9f878467f5453cc1fee295c3e18e52f1b99f10f6cf5b1682e968a9e7c"
-  end
-
+  
   resource "gitdb" do
-    url "https://files.pythonhosted.org/packages/source/g/gitdb/gitdb-4.0.11.tar.gz"
-    sha256 "bf5421126136d6d0af55bc1e7c1af1c397a34f5b7bd79e776cd3e89785c2b04b"
+    url "https://files.pythonhosted.org/packages/72/94/63b0fc47eb32792c7ba1fe1b694daec9a63620db1e313033d18140c2320a/gitdb-4.0.12.tar.gz"
+    sha256 "5ef71f855d191a3326fcfbc0d5da835f26b13fbcba60c32c21091c349ffdb571"
   end
-
+  resource "GitPython" do
+    url "https://files.pythonhosted.org/packages/9a/c8/dd58967d119baab745caec2f9d853297cec1989ec1d63f677d3880632b88/gitpython-3.1.45.tar.gz"
+    sha256 "85b0ee964ceddf211c41b9f27a49086010a190fd8132a24e21f362a4b36a791c"
+  end
   resource "smmap" do
-    url "https://files.pythonhosted.org/packages/source/s/smmap/smmap-5.0.1.tar.gz"
-    sha256 "dceeb6c0028fdb6734471eb07c0cd2aae706ccaecab45965ee83f11c8d3b1f62"
+    url "https://files.pythonhosted.org/packages/44/cd/a040c4b3119bbe532e5b0732286f805445375489fceaec1f48306068ee3b/smmap-5.0.2.tar.gz"
+    sha256 "26ea65a03958fa0c8a1c7e8c7a58fdc77221b8910f6be2131affade476898ad5"
   end
 
   def install

@@ -1,0 +1,22 @@
+class Semtag < Formula
+  include Language::Python::Virtualenv
+
+  desc "Tool for managing semantic version tags in git repositories"
+  homepage "https://github.com/mateuszmikrut/semtag"
+  url "${TARBALL_URL}"
+  sha256 "${TARBALL_SHA}"
+  version "${VERSION}"
+  license "MIT"
+
+  depends_on "python@3.12"
+
+  ${RESOURCES}
+
+  def install
+    virtualenv_install_with_resources
+  end
+
+  test do
+    system "#{bin}/semtag", "--help"
+  end
+end
